@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="wrapper">
+
+    <div class="card">
+        <h2 class="title"> Currency Converter</h2>
+
+        <div class="input-box">
+            <label>Amount</label>
+            <input id="amount" type="number" placeholder="Enter amount">
+        </div>
+
+        <div class="country-section">
+            <div class="country-block">
+                <label>From Country</label>
+                <div class="row">
+                    <select id="fromCountry">
+                        <option value="India">India (INR)</option>
+                        <option value="United States">USA (USD)</option>
+                        <option value="Japan">Japan (JPY)</option>
+                        <option value="United Kingdom">UK (GBP)</option>
+                        <option value="Australia">Australia (AUD)</option>
+                        <option value="United Arab Emirates">UAE (AED)</option>
+                    </select>
+                    <img id="fromFlag" class="flag hidden">
+                </div>
+            </div>
+
+            <span class="swap">⇄</span>
+
+            <div class="country-block">
+                <label>To Country</label>
+                <div class="row">
+                    <select id="toCountry">
+                        <option value="United States">USA (USD)</option>
+                        <option value="India">India (INR)</option>
+                        <option value="Japan">Japan (JPY)</option>
+                        <option value="United Kingdom">UK (GBP)</option>
+                        <option value="Australia">Australia (AUD)</option>
+                        <option value="United Arab Emirates">UAE (AED)</option>
+                    </select>
+                    <img id="toFlag" class="flag hidden">
+                </div>
+            </div>
+        </div>
+
+        <button class="btn" onclick="convertCurrency()">Convert</button>
+
+        <h3 class="result">Converted Amount: <span id="result">--</span></h3>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

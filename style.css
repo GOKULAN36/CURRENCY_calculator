@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-image: url("https://img.freepik.com/premium-vector/global-currency-background_115579-405.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    width: 380px;
+    background:skyblue ;
+    padding: 28px;
+    border-radius: 18px;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.input-box {
+    margin-bottom: 16px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 6px;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: #4e8cff;
+}
+
+.country-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.country-block {
+    width: 45%;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.flag {
+    width: 36px;
+    height: 24px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.hidden {
+    display: none;
+}
+
+.swap {
+    font-size: 26px;
+    color: #3f51b5;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.swap:hover {
+    transform: rotate(180deg);
+}
+
+.btn {
+    width: 100%;
+    background: #3f7afe;
+    border: none;
+    padding: 14px;
+    color: white;
+    font-size: 16px;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #1a5dff;
+}
+
+.result {
+    margin-top: 22px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform:
